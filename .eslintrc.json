@@ -1,0 +1,79 @@
+{
+  "extends": "airbnb",
+
+  "parser": "babel-eslint",
+
+  "settings": {
+    "import/resolver": "webpack"
+  },
+
+  "parserOptions": {
+    "ecmaVersion": 6,
+
+    "ecmaFeatures": {
+      "classes":                      true,
+      "spread":                       true,
+      "arrowFunctions":               true,
+      "jsx":                          true,
+      "experimentalObjectRestSpread": true
+    }
+  },
+
+  "env": { "mocha": true },
+
+  "globals": {
+    "$":      true,
+    "window": true
+  },
+
+  "rules": {
+    "max-len": ["error", { "code": 120 }],
+    "consistent-return":  "off",
+    "no-else-return":     "off",
+    "no-multi-spaces":    "off",
+    "no-return-assign":   "off",
+    "no-confusing-arrow": "off",
+    "comma-style": [0, "last", { "exceptions": { "VariableDeclaration": true }}],
+
+    "key-spacing": [ "warn", {
+      "align": "value"
+    }],
+
+    "no-unused-vars": [
+    "error", {
+        "argsIgnorePattern": "^_",
+        "vars": "all",
+        "args": "after-used",
+        "ignoreRestSiblings": true
+    }],
+    "comma-dangle": ["error", "never"],
+
+    "indent": ["error", 2, {
+      "SwitchCase": 1,
+
+      "VariableDeclarator": {
+        "var": 2,
+        "let": 2,
+        "const": 3
+      }
+    }],
+
+    "arrow-body-style": ["error", "as-needed"],
+    "arrow-parens": ["error", "as-needed"],
+
+    "new-cap": [
+      "error", {
+        "capIsNewExceptions": [
+          "S",
+          "StrictPropTypes"
+        ]
+      }
+    ],
+
+
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+
+    "import/prefer-default-export": "off",
+    "no-nested-ternary": "off"
+  },
+}
