@@ -33,7 +33,6 @@ Temporary Items
 ### Node ###
 # Logs
 out
-dist
 logs
 *.log
 npm-debug.log*
