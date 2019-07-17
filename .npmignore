@@ -1,0 +1,17 @@
+src
+
+# test
+test
+coverage
+
+# linters
+.eslintignore
+.eslintrc.json
+
+# build tools
+.tool-versions
+
+# misc
+LICENSE
+.gitignore
+.DS_*
