@@ -32,6 +32,9 @@ Just create a PR and make sure tests pass with `npm test`.
 
  - Calculate Audio MOS score and incorporate it with Video MOS score.
 
+### Docs
+See the [Wiki](https://github.com/jlurena/stream-quality-mos/wiki/StreamQualityMos)
+
 ### Credits
 
 [Charlie Robinson](https://github.com/wobbals) and his repo [opentok-mos-estimator](https://github.com/wobbals/opentok-mos-estimator)
